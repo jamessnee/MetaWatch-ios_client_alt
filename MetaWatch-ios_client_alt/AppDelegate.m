@@ -7,15 +7,46 @@
 //
 
 #import "AppDelegate.h"
-
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
 
 @implementation AppDelegate
 
+#pragma mark - MWManagerProtocol
+
+- (void) MWMDidDiscoveredWritePort{
+	NSLog(@"MWMDidDiscoveredWritePort");
+}
+
+- (void) MWM:(MWManager*)mwm didDisconnectPeripheral:(CBPeripheral *)peripheral withError:(NSError*)err{
+	NSLog(@"MWMDidDisconnectPeripheralWithError");
+}
+
+- (void) MWM:(MWManager*)mwm didConnectPeripheral:(CBPeripheral *)peripheral{
+	NSLog(@"MWMDidConnectPeripheral");
+}
+
+- (void) MWMCheckEvent:(NSTimeInterval)timestamp{
+	NSLog(@"MWMCheckEvent");
+}
+
+- (void) MWMBtn:(unsigned char)btnIndex atMode:(unsigned char)mode pressedForType:(unsigned char)type withMsg:(unsigned char)msg{
+	NSLog(@"MWMBtnAtModePressedForTypeWithMsg");
+}
+
+- (void) MWMGrantedLocalAppMode{
+	NSLog(@"MWMGrantedLocalAppMode");
+}
+
+- (void) MWMReleasedLocalAppMode{
+	NSLog(@"MWMReleasedLocalAppMode");
+}
+
+#pragma mark - Application lifecycle
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	//App stuff
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
@@ -24,6 +55,38 @@
 	self.tabBarController.viewControllers = @[viewController1, viewController2];
 	self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+	
+	//Watch connection stuff
+	[MWManager sharedManager].delegate = self;
+	
+	//Start a scan in a seperate thread - report back home when something's found
+	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+	dispatch_async(queue, ^{
+		MWManager *manager = [MWManager sharedManager];
+		//Start the scan
+		if (manager.statusCode==0) {
+			[manager startScan];
+		}
+		int timeout = MWCONNECTION_TIMEOUT; //Spin spin spin - until timeout or it connects
+		while(manager.statusCode!=1||timeout<0){
+			if (manager.statusCode==2)
+				break;
+			timeout = timeout - 1;
+			continue;
+		}
+		if (timeout<0) { //It didn't connect in time
+			[manager stopScan];
+			dispatch_sync(dispatch_get_main_queue(), ^{
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Couldn't connect" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+				[alert show];
+			});
+		}else{ //It connected
+			dispatch_sync(dispatch_get_main_queue(), ^{
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connected!" message:@"Ready to go!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+				[alert show];
+			});
+		}
+	});
     return YES;
 }
 

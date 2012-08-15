@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MWManager.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+#define MWCONNECTION_TIMEOUT 99999;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate, MWManagerProtocol>
 
 @property (strong, nonatomic) UIWindow *window;
 
