@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5930103715DBF0D300E94295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5930103615DBF0D300E94295 /* UIKit.framework */; };
+		5930103915DBF0D300E94295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5930103815DBF0D300E94295 /* Foundation.framework */; };
+		5930103B15DBF0D300E94295 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5930103A15DBF0D300E94295 /* CoreGraphics.framework */; };
+		5930104115DBF0D300E94295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5930103F15DBF0D300E94295 /* InfoPlist.strings */; };
+		5930104315DBF0D300E94295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930104215DBF0D300E94295 /* main.m */; };
+		5930104715DBF0D300E94295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930104615DBF0D300E94295 /* AppDelegate.m */; };
+		5930104A15DBF0D300E94295 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930104915DBF0D300E94295 /* FirstViewController.m */; };
+		5930104C15DBF0D300E94295 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5930104B15DBF0D300E94295 /* first.png */; };
+		5930104E15DBF0D300E94295 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5930104D15DBF0D300E94295 /* first@2x.png */; };
+		5930105115DBF0D300E94295 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930105015DBF0D300E94295 /* SecondViewController.m */; };
+		5930105315DBF0D300E94295 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 5930105215DBF0D300E94295 /* second.png */; };
+		5930105515DBF0D300E94295 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5930105415DBF0D300E94295 /* second@2x.png */; };
+		5930105815DBF0D300E94295 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5930105615DBF0D300E94295 /* FirstViewController.xib */; };
+		5930105B15DBF0D300E94295 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5930105915DBF0D300E94295 /* SecondViewController.xib */; };
+		5930106415DBF14E00E94295 /* libMWManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5930106215DBF14E00E94295 /* libMWManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5930103215DBF0D300E94295 /* MetaWatch-ios_client_alt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetaWatch-ios_client_alt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5930103615DBF0D300E94295 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5930103815DBF0D300E94295 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5930103A15DBF0D300E94295 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5930103E15DBF0D300E94295 /* MetaWatch-ios_client_alt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetaWatch-ios_client_alt-Info.plist"; sourceTree = "<group>"; };
+		5930104015DBF0D300E94295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5930104215DBF0D300E94295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5930104415DBF0D300E94295 /* MetaWatch-ios_client_alt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetaWatch-ios_client_alt-Prefix.pch"; sourceTree = "<group>"; };
+		5930104515DBF0D300E94295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5930104615DBF0D300E94295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5930104815DBF0D300E94295 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		5930104915DBF0D300E94295 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5930104B15DBF0D300E94295 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		5930104D15DBF0D300E94295 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		5930104F15DBF0D300E94295 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5930105015DBF0D300E94295 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5930105215DBF0D300E94295 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		5930105415DBF0D300E94295 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		5930105715DBF0D300E94295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		5930105A15DBF0D300E94295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		5930106215DBF14E00E94295 /* libMWManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWManager.a; sourceTree = "<group>"; };
+		5930106315DBF14E00E94295 /* MWManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5930102F15DBF0D300E94295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5930103715DBF0D300E94295 /* UIKit.framework in Frameworks */,
+				5930103915DBF0D300E94295 /* Foundation.framework in Frameworks */,
+				5930103B15DBF0D300E94295 /* CoreGraphics.framework in Frameworks */,
+				5930106415DBF14E00E94295 /* libMWManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5930102715DBF0D300E94295 = {
+			isa = PBXGroup;
+			children = (
+				5930103C15DBF0D300E94295 /* MetaWatch-ios_client_alt */,
+				5930103515DBF0D300E94295 /* Frameworks */,
+				5930103315DBF0D300E94295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5930103315DBF0D300E94295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5930103215DBF0D300E94295 /* MetaWatch-ios_client_alt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5930103515DBF0D300E94295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5930103615DBF0D300E94295 /* UIKit.framework */,
+				5930103815DBF0D300E94295 /* Foundation.framework */,
+				5930103A15DBF0D300E94295 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5930103C15DBF0D300E94295 /* MetaWatch-ios_client_alt */ = {
+			isa = PBXGroup;
+			children = (
+				5930106715DBF18900E94295 /* Controllers */,
+				5930106615DBF17C00E94295 /* Views */,
+				5930106515DBF16C00E94295 /* Images */,
+				5930106115DBF14E00E94295 /* libMWManager */,
+				5930104515DBF0D300E94295 /* AppDelegate.h */,
+				5930104615DBF0D300E94295 /* AppDelegate.m */,
+				5930103D15DBF0D300E94295 /* Supporting Files */,
+			);
+			path = "MetaWatch-ios_client_alt";
+			sourceTree = "<group>";
+		};
+		5930103D15DBF0D300E94295 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5930103E15DBF0D300E94295 /* MetaWatch-ios_client_alt-Info.plist */,
+				5930103F15DBF0D300E94295 /* InfoPlist.strings */,
+				5930104215DBF0D300E94295 /* main.m */,
+				5930104415DBF0D300E94295 /* MetaWatch-ios_client_alt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5930106115DBF14E00E94295 /* libMWManager */ = {
+			isa = PBXGroup;
+			children = (
+				5930106215DBF14E00E94295 /* libMWManager.a */,
+				5930106315DBF14E00E94295 /* MWManager.h */,
+			);
+			path = libMWManager;
+			sourceTree = "<group>";
+		};
+		5930106515DBF16C00E94295 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5930104B15DBF0D300E94295 /* first.png */,
+				5930104D15DBF0D300E94295 /* first@2x.png */,
+				5930105215DBF0D300E94295 /* second.png */,
+				5930105415DBF0D300E94295 /* second@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5930106615DBF17C00E94295 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5930105615DBF0D300E94295 /* FirstViewController.xib */,
+				5930105915DBF0D300E94295 /* SecondViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5930106715DBF18900E94295 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5930104815DBF0D300E94295 /* FirstViewController.h */,
+				5930104915DBF0D300E94295 /* FirstViewController.m */,
+				5930104F15DBF0D300E94295 /* SecondViewController.h */,
+				5930105015DBF0D300E94295 /* SecondViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5930103115DBF0D300E94295 /* MetaWatch-ios_client_alt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5930105E15DBF0D300E94295 /* Build configuration list for PBXNativeTarget "MetaWatch-ios_client_alt" */;
+			buildPhases = (
+				5930102E15DBF0D300E94295 /* Sources */,
+				5930102F15DBF0D300E94295 /* Frameworks */,
+				5930103015DBF0D300E94295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetaWatch-ios_client_alt";
+			productName = "MetaWatch-ios_client_alt";
+			productReference = 5930103215DBF0D300E94295 /* MetaWatch-ios_client_alt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5930102915DBF0D300E94295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "James Snee";
+			};
+			buildConfigurationList = 5930102C15DBF0D300E94295 /* Build configuration list for PBXProject "MetaWatch-ios_client_alt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5930102715DBF0D300E94295;
+			productRefGroup = 5930103315DBF0D300E94295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5930103115DBF0D300E94295 /* MetaWatch-ios_client_alt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5930103015DBF0D300E94295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5930104115DBF0D300E94295 /* InfoPlist.strings in Resources */,
+				5930104C15DBF0D300E94295 /* first.png in Resources */,
+				5930104E15DBF0D300E94295 /* first@2x.png in Resources */,
+				5930105315DBF0D300E94295 /* second.png in Resources */,
+				5930105515DBF0D300E94295 /* second@2x.png in Resources */,
+				5930105815DBF0D300E94295 /* FirstViewController.xib in Resources */,
+				5930105B15DBF0D300E94295 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5930102E15DBF0D300E94295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5930104315DBF0D300E94295 /* main.m in Sources */,
+				5930104715DBF0D300E94295 /* AppDelegate.m in Sources */,
+				5930104A15DBF0D300E94295 /* FirstViewController.m in Sources */,
+				5930105115DBF0D300E94295 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5930103F15DBF0D300E94295 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5930104015DBF0D300E94295 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5930105615DBF0D300E94295 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5930105715DBF0D300E94295 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		5930105915DBF0D300E94295 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5930105A15DBF0D300E94295 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5930105C15DBF0D300E94295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5930105D15DBF0D300E94295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5930105F15DBF0D300E94295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MetaWatch-ios_client_alt/MetaWatch-ios_client_alt-Prefix.pch";
+				INFOPLIST_FILE = "MetaWatch-ios_client_alt/MetaWatch-ios_client_alt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MetaWatch-ios_client_alt/libMWManager\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5930106015DBF0D300E94295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MetaWatch-ios_client_alt/MetaWatch-ios_client_alt-Prefix.pch";
+				INFOPLIST_FILE = "MetaWatch-ios_client_alt/MetaWatch-ios_client_alt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MetaWatch-ios_client_alt/libMWManager\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5930102C15DBF0D300E94295 /* Build configuration list for PBXProject "MetaWatch-ios_client_alt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5930105C15DBF0D300E94295 /* Debug */,
+				5930105D15DBF0D300E94295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5930105E15DBF0D300E94295 /* Build configuration list for PBXNativeTarget "MetaWatch-ios_client_alt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5930105F15DBF0D300E94295 /* Debug */,
+				5930106015DBF0D300E94295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5930102915DBF0D300E94295 /* Project object */;
+}
